@@ -1332,12 +1332,110 @@ video {
   }
 }
 
-ed
 
-
+.bg-image {
+  background-image: url(https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.bg-image::before {
+  content: ''; /* Required for pseudo-elements */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 1;
+}
+.right {
+  position: relative; /* Ensure text is above the overlay */
+  z-index: 2;
+}
+.bg-pattern {
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/y-so-serious.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.bg-pattern::before {
+  content: ''; /* Required for pseudo-elements */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Black with 60% opacity */
+  z-index: 1;
+}
+.img-web {
+  background-image: url(https://media.licdn.com/dms/image/v2/D4D12AQEZtPCuttD_iQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1697453573297?e=2147483647&v=beta&t=C8ZqgMEYiC1QXlEpXf-8AarpVF48qhR7lAd0ZgrbQ7M);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img-web::before {
+  content: ''; /* Required for pseudo-elements */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Black with 60% opacity */
+  z-index: 1;
+  border-radius: 15px;
+}
+.img-web:hover {
+  transition: transform 0.5s ease;
+  transform: translateY(-10px);
+}
 /* custome mysefl */
 .pad-box a {
   padding: 0px 15px 0px 15px;
+}
+.padding-top {
+  padding-top: 30px;
+}
+.padding-botom {
+  padding-bottom: 15px;
+}
+.border-enroll {
+  border: 2px solid white;
+}
+.border-ra15 {
+  border-radius: 15px;
+}
+.bg-nav {
+  background-color: #181C14;
+}
+.bg-color {
+  background-color: #3C3D37;
+}
+.bg-co {
+  background-color: #393E46;
+}
+.bg-foot {
+  background-color: #3C3D37;
+}
+.bg-h1 {
+  color: #3C3D37;
+}
+.bg-h2 {
+  color: #3C3D37;
+}
+.bg-text {
+  color: #ECDFCC;
+}
+.bg-ourcourse {
+  color: #181C14;;
+}
+.bg-p-text {
+  color: #697565;
+}
+.bg-buton {
+  background: #181C14;
 }
 
 
