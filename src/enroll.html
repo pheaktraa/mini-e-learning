@@ -11,7 +11,7 @@
 <body>
     <section style="height: 100vh;"
             class=" bg-white dark:bg-gray-900 h-auto flex items-center justify-center m-0 p-0 bg-nav">
-        <div class="bg-color border-enroll border-ra15 w-1/2 px-4 py-8 mx-auto right">
+        <div class=" bg-color border-enroll border-ra15 w-1/2 px-4 py-8 mx-auto right">
             <form>
                 <div class="grid gap-6">
                     <div class="mb-6">
@@ -30,11 +30,16 @@
                             placeholder="Doe" required />
                     </div>
                     <div class="mb-6">
-                        <label for="company"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Company</label>
-                        <input type="text" id="company"
+                        <label for="gender"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Gender :
+                        <!-- <input type="text" id="gender"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="Flowbite" required />
+                            placeholder="Gender" required /> -->
+                            <label for="male">Male</label>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="female">Female</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                        </label>
                     </div>
                     <div class="mb-6">
                         <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone

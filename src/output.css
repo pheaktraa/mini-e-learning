@@ -1386,6 +1386,7 @@ video {
   background-color: rgba(0, 0, 0, 0.6); /* Black with 60% opacity */
   z-index: 1;
   border-radius: 15px;
+  box-shadow: 0 0 20px 5px rgb(0, 0, 0, 0.8)
 }
 .img-web:hover {
   transition: transform 0.5s ease;
@@ -1419,6 +1420,27 @@ video {
 .bg-foot {
   background-color: #3C3D37;
 }
+.bg-login {
+  background-color: #3C3D37;
+  transition: background-color 0.4s ease;
+}
+.bg-login:hover {
+  background-color: #ECDFCC;
+}
+.bg-getstart {
+  background-color: #3C3D37;
+  transition: background-color 0.4s ease;
+}
+.bg-getstart:hover {
+  background-color: #181C14;
+}
+.bg-seemore {
+  background-color: #181C14 !important;
+  transition: background-color 0.4s ease;
+}
+.bg-seemore:hover {
+  background-color: #ECDFCC !important;
+}
 .bg-h1 {
   color: #3C3D37;
 }
@@ -1427,9 +1449,13 @@ video {
 }
 .bg-text {
   color: #ECDFCC;
+  transition: color 0.4s ease;
+}
+.bg-text-nav:hover {
+  color: #697565;
 }
 .bg-mb-nav {
-  background-color: #ECDFCC;
+  background-color: #697565;
 }
 .bg-mb-nav-text {
   color: #181C14;
@@ -1442,6 +1468,9 @@ video {
 }
 .bg-buton {
   background: #181C14;
+}
+.block-b {
+  box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.8);
 }
 
 
