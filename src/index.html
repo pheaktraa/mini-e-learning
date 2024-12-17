@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
-    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="output.css">
     <link href="src/output.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
 </head>
@@ -112,6 +112,7 @@
                     <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
                     <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
                 </a>
+                <!-- Mobile Toggle Button -->
                 <button data-collapse-toggle="navbar-multi-level" type="button"
                     class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                     aria-controls="navbar-multi-level" aria-expanded="false">
@@ -122,18 +123,20 @@
                             d="M1 1h15M1 7h15M1 13h15" />
                     </svg>
                 </button>
-                <div class=" items-center justify-between w-full md:flex-row md:w-auto md:order-1"
+                <!-- Main Navbar items-center justify-between w-full md:flex-row md:w-auto md:order-1-->
+                <div class=" hidden w-full md:flex md:w-auto"
                     id="navbar-sticky">
                     <ul style="background-color: #181C14"
-                        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-color dark:bg-gray-800 md:dark:bg-gray-900 justify-center">
+                        class="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-nav dark:bg-gray-800 justify-center">
+                        <!-- flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-color dark:bg-gray-800 md:dark:bg-gray-900 justify-center -->
                         <li>
                             <a href="#"
-                                class=" bg-text block py-2 px-3  rounded md:p-0    md:dark:text-white hover:text-blue-700 "
+                                class=" bg-text block py-2 px-3 rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                                 aria-current="0">Home</a>
                         </li>
                         <li>
                             <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                                class="bg-text flex items-center justify-between w-full py-2 px-3  hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-700 dark:focus:text-white dark:hover:bg-blue-700 md:dark:hover:bg-transparent">Explore
+                                class="bg-text flex items-center justify-between w-full py-2 px-3 md:hover:bg-transparent md:border-0  md:p-0 md:w-auto dark:text-white  dark:focus:text-white dark:hover:bg-gray-700  dark:hover:text-white md:dark:hover:bg-transparent">Explore
                                 <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                     fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -199,15 +202,15 @@
                         </li>
                         <li>
                             <a href="#"
-                                class="bg-text block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Us</a>
+                                class="bg-text block py-2 px-3 rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Us</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="bg-text block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+                                class="bg-text block py-2 px-3 rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="bg-text block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                                class="bg-text block py-2 px-3 rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -229,7 +232,7 @@
                     Empower yourself with flexible, high-quality online courses designed for professionals, students,
                     and lifelong learners. Explore engaging lessons, interactive content, and expert guidance to achieve
                     your goals at your own pace</p>
-                <a href="src/enroll.html"
+                <a href="enroll.html"
                     class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
                     Get started
                     <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
@@ -249,7 +252,7 @@
 
 
     <!-- class course -->
-    <section class="px-8 py-8 bg-color h-[600px]  flex flex-col items-center justify-center">
+    <section class="px-4 py-4 bg-color h-[400px]  flex flex-col items-center justify-center">
         <h2 class="bg-text text-6xl font-bold ">Our Course</h2>
         <div class="pt-8 grid grid-cols-1 row0 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-self-center">
             <!-- Card 1 -->
@@ -400,6 +403,36 @@
             </p>
         </div>
     </section>
+
+
+
+    <!-- JavaScript for Menu and Dropdowns -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleButton = document.querySelector('[data-collapse-toggle="navbar-multi-level"]');
+      const navbar = document.getElementById('navbar-sticky');
+  
+      toggleButton.addEventListener('click', () => {
+        navbar.classList.toggle('hidden');
+      });
+  
+      const dropdownBtn = document.getElementById('dropdownNavbarLink');
+      const dropdownMenu = document.getElementById('dropdownNavbar');
+  
+      dropdownBtn.addEventListener('click', () => {
+        dropdownMenu.classList.toggle('hidden');
+      });
+  
+      const subDropdownBtn = document.getElementById('doubleDropdownButton');
+      const subDropdownMenu = document.getElementById('doubleDropdown');
+  
+      subDropdownBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        subDropdownMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
+
 
 
 

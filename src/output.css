@@ -1428,6 +1428,12 @@ video {
 .bg-text {
   color: #ECDFCC;
 }
+.bg-mb-nav {
+  background-color: #ECDFCC;
+}
+.bg-mb-nav-text {
+  color: #181C14;
+}
 .bg-ourcourse {
   color: #181C14;;
 }
